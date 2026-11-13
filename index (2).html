@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veerannagari Ajay – Python Automation Test Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f4;--surface:#fff;--ink:#12212b;--muted:#51636f;--line:#d5dedb;--pass:#157a52;--pass-bg:#dff3e9;--term:#12212b;--term-ink:#d9e6e1;--term-dim:#8aa09a;--accent:#157a52;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e171d;--surface:#15222a;--ink:#e6efec;--muted:#98aba6;--line:#26363f;--pass:#5fd3a0;--pass-bg:#173a2e;--term:#09100f;--term-ink:#d9e6e1;--term-dim:#6f8a83;--accent:#5fd3a0}}
+:root[data-theme="dark"]{--bg:#0e171d;--surface:#15222a;--ink:#e6efec;--muted:#98aba6;--line:#26363f;--pass:#5fd3a0;--pass-bg:#173a2e;--term:#09100f;--term-ink:#d9e6e1;--term-dim:#6f8a83;--accent:#5fd3a0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto;white-space:nowrap}
+nav b{font-family:"Bricolage Grotesque";font-size:18px;margin-right:auto}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(42px,6.4vw,76px);font-weight:800;letter-spacing:-.02em}
+.role{font-family:"Bricolage Grotesque";font-size:clamp(20px,2.4vw,26px);font-weight:500;color:var(--accent);margin:14px 0 18px}
+.hero p{color:var(--muted);max-width:46ch;margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.term{background:var(--term);color:var(--term-ink);border-radius:14px;padding:20px 22px;font:400 13.5px/1.75 "IBM Plex Mono",monospace;overflow-x:auto;white-space:pre}
+.term .d{color:var(--term-dim)}.term .p{color:#5fd3a0}
+.term .bar{display:inline-block;width:9ch;height:.5em;background:#5fd3a0;border-radius:2px;margin-left:1ch}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px;font-weight:700}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:32px}
+.facts div{padding:20px 22px;border-right:1px solid var(--line)}.facts div:last-child{border:0}
+.facts strong{display:block;font:700 30px "Bricolage Grotesque"}
+.facts span{color:var(--muted);font-size:14px}
+.sum{columns:2;column-gap:40px;margin:0;padding-left:20px}
+.sum li{break-inside:avoid;margin-bottom:10px;color:var(--muted)}
+.skills{display:grid;grid-template-columns:200px 1fr;gap:0}
+.skills dt,.skills dd{margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
+.skills dt{font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);border:1px solid var(--line);padding:3px 12px;border-radius:999px;font-size:14px}
+.tl{position:relative;margin:0;padding:0 0 0 28px;list-style:none;border-left:2px solid var(--line)}
+.job{position:relative;margin-bottom:44px}
+.job::before{content:"";position:absolute;left:-37px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.job h3{font-size:24px}
+.meta{color:var(--muted);font-size:15px;margin:4px 0 18px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.proj h4{font:700 19px "Bricolage Grotesque";margin:0 0 4px}
+.proj .sub{color:var(--muted);font-size:14.5px;margin-bottom:12px}
+.proj ul{margin:12px 0 0;padding-left:20px}.proj li{margin-bottom:6px}
+.tag{display:inline-block;background:var(--pass-bg);color:var(--pass);font-weight:600;font-size:13px;padding:2px 10px;border-radius:6px;margin-right:6px}
+.stack{font-size:14px;color:var(--muted);margin-top:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.edu{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media(max-width:820px){.hero,.two{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}.sum{columns:1}.skills{grid-template-columns:1fr}.skills dt{border:0;padding-bottom:0}.hero{padding-top:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Ajay</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Experience</a><a href="#education">Education</a></div></nav>
+
+<header class="wrap hero">
+  <div>
+    <h1>Veerannagari Ajay</h1>
+    <div class="role">Python Automation Test Engineer</div>
+    <p>I build test frameworks that catch bugs before customers do, across banking, healthcare and e-commerce. Based in Bangalore.</p>
+    <div class="btns"><a class="btn main" href="#work">See my work</a><a class="btn" href="#skills">Skills</a></div>
+  </div>
+  <div class="term" role="img" aria-label="Test run summary: 3 projects, 3 domains, 3 years of Python automation, all passed"><span class="d">$</span> pytest --domains all
+<span class="d">collected 3 projects</span>
+
+banking/custody_payments.py   <span class="p">PASSED</span>
+healthcare/clinical_data.py   <span class="p">PASSED</span>
+ecommerce/beauty_store.py     <span class="p">PASSED</span>
+
+<span class="p">=== 3 passed</span> <span class="d">in 3 years ===</span></div>
+</header>
+
+<section id="about"><div class="wrap">
+  <h2>About</h2>
+  <div class="facts">
+    <div><strong>3 yrs</strong><span>Python test automation</span></div>
+    <div><strong>3</strong><span>Domains: banking, healthcare, e-commerce</span></div>
+    <div><strong>8</strong><span>People in the largest team</span></div>
+    <div><strong>CI/CD</strong><span>Jenkins and GitHub Actions</span></div>
+  </div>
+  <ul class="sum">
+    <li>UI automation with Selenium WebDriver, Playwright, Pytest and Robot Framework.</li>
+    <li>Reusable hybrid frameworks using Page Object Model, fixtures and data-driven tests.</li>
+    <li>REST API testing with Python Requests and Postman, including JSON schema validation.</li>
+    <li>Test suites run in Jenkins and GitHub Actions, in parallel, with Allure reports.</li>
+    <li>SQL validation and reconciliation in MySQL, MSSQL and SQLite.</li>
+    <li>AWS EC2 provisioning and Linux server automation over SSH with Boto3 and Paramiko.</li>
+    <li>Linux debugging with command-line tools, system logs and service checks.</li>
+    <li>ServiceNow incidents raised automatically through REST APIs. Agile/Scrum with JIRA.</li>
+  </ul>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Programming</dt><dd class="chips"><span class="chip">Python 3.x</span><span class="chip">OOP</span><span class="chip">SQL</span><span class="chip">Bash</span><span class="chip">Requests</span><span class="chip">Paramiko</span><span class="chip">Boto3</span></dd>
+    <dt>UI test automation</dt><dd class="chips"><span class="chip">Selenium WebDriver</span><span class="chip">Playwright</span><span class="chip">Pytest</span><span class="chip">Robot Framework</span></dd>
+    <dt>Framework design</dt><dd class="chips"><span class="chip">Page Object Model</span><span class="chip">Hybrid</span><span class="chip">Data-driven</span><span class="chip">Keyword-driven</span><span class="chip">Fixtures</span><span class="chip">Markers</span><span class="chip">pytest-xdist</span></dd>
+    <dt>API testing</dt><dd class="chips"><span class="chip">REST</span><span class="chip">Postman</span><span class="chip">JSON schema validation</span></dd>
+    <dt>Databases</dt><dd class="chips"><span class="chip">MySQL</span><span class="chip">MSSQL</span><span class="chip">SQLite</span></dd>
+    <dt>CI/CD and DevOps</dt><dd class="chips"><span class="chip">Jenkins</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">GitHub</span></dd>
+    <dt>Cloud and Linux</dt><dd class="chips"><span class="chip">AWS EC2</span><span class="chip">Ubuntu</span><span class="chip">SSH</span><span class="chip">VM provisioning</span><span class="chip">System debugging</span></dd>
+    <dt>Reporting and ITSM</dt><dd class="chips"><span class="chip">Allure</span><span class="chip">pytest-html</span><span class="chip">JIRA</span><span class="chip">ServiceNow</span></dd>
+    <dt>Testing types</dt><dd class="chips"><span class="chip">Functional</span><span class="chip">Smoke</span><span class="chip">Regression</span><span class="chip">Integration</span><span class="chip">End-to-end</span><span class="chip">API</span><span class="chip">Data validation</span></dd>
+    <dt>AI-assisted work</dt><dd class="chips"><span class="chip">GitHub Copilot</span><span class="chip">ChatGPT</span></dd>
+  </dl>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Experience</h2>
+  <ol class="tl">
+    <li class="job">
+      <h3>Python Automation Engineer</h3>
+      <div class="meta">QuickClick Infocom, Bangalore | Sep 2024 – Sep 2026</div>
+
+      <div class="proj">
+        <h4>Custody and Payments Operations Platform</h4>
+        <div class="sub"><span class="tag">BNY</span>Banking and financial services | Oct 2025 – Sep 2026 | Team of 8</div>
+        <p style="margin:0">Test automation for a platform handling trade settlement, payment processing and client reporting, plus Python automation for AWS EC2 environments and ServiceNow incidents.</p>
+        <ul>
+          <li>Automated trade capture, status and confirmation flows with Playwright, including payment and approval flows with auto-waits, tracing and cross-browser runs.</li>
+          <li>Tested settlement, payment and reporting REST APIs and reconciled transaction data in MSSQL.</li>
+          <li>Built Python scripts to provision AWS EC2 test environments and manage Linux VMs over SSH.</li>
+          <li>Raised ServiceNow incidents automatically on infrastructure failures through its REST API.</li>
+          <li>Found root causes of Linux VM issues using logs, process checks and service checks.</li>
+          <li>Ran regression suites in Docker through Jenkins with Allure reports, and supported defect triage.</li>
+        </ul>
+        <div class="stack">Python, Pytest, Playwright, Selenium, Robot Framework, REST API, MSSQL, AWS EC2, Linux, Paramiko, ServiceNow, Jenkins, Docker, Allure, JIRA</div>
+      </div>
+
+      <div class="proj">
+        <h4>Healthcare Analytics and Clinical Data Platform</h4>
+        <div class="sub"><span class="tag">Clarivate</span>Healthcare | Sep 2024 – Sep 2025 | Team of 6</div>
+        <p style="margin:0">Test automation for an analytics platform that delivers clinical, claims and real-world data to life sciences customers, covering search, dashboards, reports and data APIs.</p>
+        <ul>
+          <li>Built a hybrid Pytest and Robot Framework framework using Page Object Model.</li>
+          <li>Automated search, filter and drill-down flows on clinical and claims data with Selenium and Playwright.</li>
+          <li>Validated dashboards and downloadable Excel and PDF reports against source data.</li>
+          <li>Wrote SQL in MySQL and MSSQL to verify data ingestion and transformation.</li>
+          <li>Tested data APIs for schema, status codes and UI consistency with Requests and Postman.</li>
+          <li>Ran smoke and regression suites in parallel with pytest-xdist on GitHub Actions, and logged defects in JIRA.</li>
+        </ul>
+        <div class="stack">Python, Pytest, Selenium, Playwright, Robot Framework, Postman, MySQL, MSSQL, GitHub Actions, Allure, JIRA</div>
+      </div>
+    </li>
+
+    <li class="job">
+      <h3>Associate Python Automation Engineer</h3>
+      <div class="meta">QuickClick Infocom, Bangalore | Aug 2023 – Aug 2024</div>
+      <div class="proj">
+        <h4>Online Beauty and Fashion Store</h4>
+        <div class="sub"><span class="tag">Nykaa</span>E-commerce | Aug 2023 – Aug 2024 | Team of 4</div>
+        <p style="margin:0">Functional and regression automation for an online store covering login, search and filters, wishlist, cart and checkout.</p>
+        <ul>
+          <li>Automated customer-facing web workflows with Python, Selenium, Pytest and Page Object Model.</li>
+          <li>Used fixtures and parametrization for browser setup, teardown and data-driven tests.</li>
+          <li>Managed test data in SQLite and checked product, cart and order details against the UI.</li>
+          <li>Reported defects with steps, screenshots and logs, and verified fixes during regression cycles.</li>
+        </ul>
+        <div class="stack">Python, Selenium WebDriver, Pytest, SQLite, Git, GitHub</div>
+      </div>
+    </li>
+  </ol>
+</div></section>
+
+<section id="education"><div class="wrap two">
+  <div>
+    <h2 style="font-size:clamp(28px,4vw,40px);margin-bottom:28px">Education</h2>
+    <div class="edu"><h3 style="font-size:21px">B.Tech, Electronics and Communication Engineering</h3><div class="meta" style="margin:6px 0 0">ALTS College, Anantapur | 2024 | 73.78%</div></div>
+  </div>
+  <div>
+    <h2 style="font-size:clamp(28px,4vw,40px);margin-bottom:28px">Strengths</h2>
+    <ul style="margin:0;padding-left:20px;color:var(--muted)">
+      <li>Clean, reusable frameworks with Page Object Model and Pytest fixtures.</li>
+      <li>Debugging failures down to the root cause.</li>
+      <li>Careful test design, data validation and defect reporting.</li>
+      <li>Clear communication with developers.</li>
+    </ul>
+  </div>
+</div></section>
+
+<footer><div class="wrap">Veerannagari Ajay | Python Automation Test Engineer | Bangalore, India</div></footer>
+</body>
+</html>
